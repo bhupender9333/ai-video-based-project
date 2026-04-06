@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const multer = require("multer");
-const Video = require("../models/Video");
+const Video = require("../models/video");
 const auth = require("../middleware/auth");
 
 // storage config
