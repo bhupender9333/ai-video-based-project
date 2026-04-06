@@ -10,6 +10,9 @@ app.use(express.json());
 app.use(cors());
 
 // routes
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/videos", require("./routes/videos"));
 
